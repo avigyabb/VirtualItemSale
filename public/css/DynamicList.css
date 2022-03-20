@@ -1,0 +1,21 @@
+.dynamicList {
+  list-style: none;
+  padding-left: 1rem;
+}
+
+.dynamicList .deleteButton {
+  background-color: transparent;
+  border: none;
+  color: darkred;
+  margin-left: 1rem;
+  padding: 0;
+}
+
+.dynamicListForm {
+  display: flex;
+  gap: 1rem;
+}
+
+.dynamicListForm input {
+  flex-grow: 1;
+}

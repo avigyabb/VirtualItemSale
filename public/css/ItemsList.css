@@ -1,0 +1,14 @@
+.dynamicList .myItemImage {
+    height: 50px;
+    width: 50px;
+}
+
+.dynamicList li {
+    display: flex;
+    border-bottom: solid;
+    margin-bottom: 10px;
+}
+
+.dynamicList h1 {
+    margin-left: 20px;
+}

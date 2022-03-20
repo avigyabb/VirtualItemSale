@@ -1,0 +1,262 @@
+/***** Generic Containers ******/
+
+.widthContainer {
+  flex-grow: 1;
+  max-width: 1280px;
+}
+
+.paper {
+  padding: 1rem;
+  background-color: white;
+  border-radius: 0.6rem;
+  box-shadow: 1px 1px 1px 1px lightgray;
+}
+
+/***** Header *****/
+
+.brand {
+  color: #3b5998;
+  font-weight: bold;
+}
+
+#header {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  border-bottom: 1px solid #ccd6dd;
+  margin-bottom: 1.5rem;
+  padding: 0.5rem 0;
+}
+
+#header .widthContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#header h1 {
+  font-weight: 600;
+}
+
+#loginForm {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+#loginForm input {
+  width: 12em;
+}
+
+/***** Welcome *****/
+
+#welcome {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#welcome.hidden {
+  display: none;
+}
+
+#welcome h1 {
+  font-size: 1.8em;
+  font-weight: 300;
+}
+
+#welcome .paper {
+  text-align: center;
+  width: 50%;
+}
+
+/***** Main *****/
+
+#main {
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem 0;
+  animation: fadein 1s;
+}
+
+#main.hidden, #templatePost {
+  display: none;
+}
+
+#main .widthContainer {
+  display: flex;
+}
+
+/***** Feed *****/
+
+#feedPanel {
+  flex-grow: 1;
+
+  display: flex;
+  flex-direction: column;
+}
+
+#feed {
+  display: flex;
+  flex-direction: column;
+}
+
+#postForm {
+  margin-top: 0;
+}
+
+#postForm .text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+#postForm button {
+  margin-top: 0.5rem;
+}
+
+#postForm textarea {
+  min-height: 4em;
+  width: 100%;
+}
+
+#postForm input {
+  width: 100%;
+  margin-bottom: 10px;;
+}
+
+.post {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  margin: 1rem 0;
+  padding: 1rem;
+  animation: fadein 0.5s;
+}
+
+.post > div {
+  flex-grow: 1;
+}
+
+.postHeader {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.postHeader .author {
+  display: flex;
+  align-items: center;
+}
+
+.postHeader .verified {
+  width: 1em;
+  margin-left: 0.125rem;
+  margin-right: 0.25rem;
+}
+
+.postHeader .time {
+  color: gray;
+}
+
+.post .avatar {
+  border: 1px solid #ccd6dd;
+  border-radius: 50%;
+  width: 3em;
+  height: 3em;
+}
+
+.post .text {
+  white-space: pre-line;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+}
+
+.content .image {
+  width: 300px;
+  height: 300px;
+  border: solid;
+  border-radius: 20px;
+  border-color: lightgray;
+}
+
+.content h1 {
+  margin-top: 0px;
+  font-size: 30px;
+}
+
+.content .leftContent {
+  margin-left: 3%;
+}
+
+.leftContent button {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  margin-top: 8%;
+  margin-left: 30px;
+}
+#acceptButton {
+  background-color: green; 
+  border: none;
+}
+
+
+/***** Sidebar *****/
+
+#sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  margin-left: 1rem;
+  width: 30%;
+}
+
+#editPanel h2, #followPanel h2, #itemPanel h2{
+  font-size: x-large;
+  font-weight: 300;
+}
+
+#editPanel {
+  padding: 0.5rem 1.5rem;
+  width: 100%;
+}
+
+#editPanel > div {
+  display: flex;
+  flex-direction: column;
+  margin: 1.25rem 0;
+}
+
+#editPanel label {
+  font-size: 1.25rem;
+  font-weight: normal;
+  margin-bottom: 0.75rem;
+}
+
+#followPanel {
+  padding: 0.5rem 1.5rem 1rem 1.5rem;
+  width: 100%;
+}
+
+#itemPanel {
+  padding: 0.5rem 1.5rem 1rem 1.5rem;
+  width: 100%;
+}
+
+/***** Animations *****/
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

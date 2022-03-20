@@ -1,0 +1,23 @@
+.editableText {
+  display: flex;
+}
+
+.editableText > :first-child {
+  flex-grow: 1;
+  margin-right: 0.5rem;
+}
+
+.editableText input {
+  min-width: 0;
+}
+
+.editableText span {
+  background-color: #e6ecf0;
+  border-radius: 0.5rem;
+  padding: 0.25rem;
+}
+
+.editableText button {
+  padding: 0.25rem;
+  border-radius: 0.5rem;
+}
